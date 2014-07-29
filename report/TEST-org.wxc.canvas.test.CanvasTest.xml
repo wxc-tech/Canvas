@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Yigencongs-MacBook-Pro.local" name="org.wxc.canvas.test.CanvasTest" tests="8" time="6.082" timestamp="2014-04-30T04:50:25">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/templates//" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="dist" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/dist" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/classes" />
+    <property name="report" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/report" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609" />
+    <property name="java.runtime.version" value="1.7.0_51-b13" />
+    <property name="user.name" value="Yigencong" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="runtests" />
+    <property name="ant.project.name" value="Canvas" />
+    <property name="java.version" value="1.7.0_51" />
+    <property name="user.timezone" value="" />
+    <property name="bin" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/bin" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="src" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/src" />
+    <property name="ant.file.Canvas" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/build.xml" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/build.xml" />
+    <property name="os.version" value="10.8.2" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.51-b03" />
+    <property name="ant.library.dir" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="eclipse.pdebuild.scripts" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/scripts//" />
+    <property name="user.home" value="/Users/Yigencong" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/Users/Yigencong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.wxc.canvas.test.CanvasTest filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/report/TEST-org.wxc.canvas.test.CanvasTest.xml crashfile=/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/junitvmwatcher8946767734608730357.properties propsfile=/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/junit6293928409113927433.properties" />
+    <property name="java.class.path" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/bin:/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/lib/junit-4.1.jar:/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib/ant-launcher.jar:/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib/ant.jar:/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib/ant-junit.jar:/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="eclipse.pdebuild.home" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.eclipse.pde.build_3.8.2.v20121114-140810/.//" />
+    <property name="java.io.tmpdir" value="/var/folders/xx/jzv6984s0q1gzt39kgwj8r8h0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="testsrc" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14/testsrc" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="ant.file.type.Canvas" value="file" />
+    <property name="java.ext.dirs" value="/Users/Yigencong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/Yigencong/Desktop/tmp store/project_pqs/pqs/svnroot_pqs_141/trunk/PS5_sp14" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/Users/Yigencong/Desktop/tmp store/eclipse/plugins/org.apache.ant_1.8.3.v201301120609/lib/ant.jar" />
+    <property name="file.encoding" value="US-ASCII" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="runtests" />
+  </properties>
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testChooseBrush" time="2.555" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testClearBoard" time="0.267" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testChooseColor" time="0.311" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testChooseStroke" time="0.25" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testAddListener" time="0.402" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testToString" time="0.634" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testHashCode" time="0.724" />
+  <testcase classname="org.wxc.canvas.test.CanvasTest" name="testEquals" time="0.716" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

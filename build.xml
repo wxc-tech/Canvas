@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Canvas" default="run" basedir=".">
+    <description>
+    This build.xml is used to compile the canvas project and
+    package the project to jar file, run the canvas and test
+    the project.
+  </description>
+  
+  <property name="src" location="./src"/>
+  <property name="testsrc" location="./testsrc"/>
+  <property name="dist" location="./dist"/>	
+  <property name="bin" location="./bin"/>
+  <property name="report" location="./report"/>
+  
+  <target name="clean">
+    <delete dir="${bin}"/>
+    <delete dir="${dist}"/>
+  	<delete dir="${report}"/>
+  </target>
+  
+  <target name="prepare" description="make the run dirs" depends="clean">
+    <mkdir dir="${bin}"/>
+    <mkdir dir="${dist}"/>
+  	<mkdir dir="${report}"/>
+  </target>
+  
+  <target name="compile" description="compile the canvas app" depends="prepare">
+    <javac includeantruntime="yes" srcdir="${src}" destdir="${bin}"/>
+  </target>
+  
+  <target name="package" description="generate the jar" depends="compile">
+    <jar destfile="${dist}/canvas.jar" basedir="${bin}">
+    <manifest>
+      <attribute name="Main-Class" value="org.wxc.canvas.gui.CanvasController"/>
+    </manifest>
+    </jar>
+  </target>
+  
+  <target name="run" description="run the canvas app" depends="package">
+    <java jar="${dist}/canvas.jar" fork="true"/>
+  </target>
+  
+  <target name="compiletests" description="compile junit tests" depends="compile">
+    <javac includeantruntime="yes" srcdir="${testsrc}" destdir="${bin}">
+      <classpath>
+        <pathelement path="lib/junit-4.1.jar"/>
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="runtests" description="Run the tests" depends="compiletests">
+    <junit printsummary="yes" haltonfailure="yes">
+      <classpath>
+        <pathelement location="${bin}"/>
+        <pathelement location="lib/junit-4.1.jar"/>
+      </classpath>
+      <batchtest fork="yes" todir="${report}">
+        <fileset dir="${testsrc}">
+          <include name="**/*Test*.java"/>
+        </fileset>
+        <formatter type="xml"/>
+      </batchtest>
+    </junit>
+  </target>
+
+ </project>

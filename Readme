@@ -1,0 +1,10 @@
+Readme for build.xml:
+
+In the build.xml, the default target for the project is "run". So if you
+want to run tests, you should change default="runtests" or just launch the
+target of "runtests" by command line.
+
+The directory bin, dist, report are created by running build.xml:
+The bin directory includes all .class files.
+The dist directory include the executable .jar file.
+The report directory includes all .xml files which are the test reports for all test cases.
